@@ -49,12 +49,6 @@ class Mapa(Grafo):
     self.insereArestaNome("Rimnicu Vilcea", "Sibiu")
     self.insereArestaNome("Vaslui", "Urziceni")
 
-  def mostraMapa(self):
-    for i in self.getVertices():
-      x = i.getNome() + " ---"
-      for j in self.getSucessor(i):
-        x = x + " " + j.getNome()
-      print(x)
 
 
 

@@ -12,7 +12,6 @@ class Largura:
       fila = []
       pai = []
       inicio = -1
-      fim = 0
       fila.append(o)
       pai.append(-1)
       while len(fila) > inicio:

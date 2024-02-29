@@ -1,6 +1,6 @@
 from Vertice import Vertice
 from Aresta import Aresta
-class Grafo:
+class Digrafo:
   def __init__(self):
     self.__vertices = []
     self.__arestas = []
@@ -43,9 +43,7 @@ class Grafo:
   def insereAresta(self, o, d, vl = 0): # Recebe dois Vértices e o valor
     if not self.arestaExiste(o, d):
       a = Aresta(o, d, vl)
-      b = Aresta(d, o, vl)
       self.getArestas().append(a)
-      self.getArestas().append(b)
   
   def insereArestaNome(self, o, d, vl = 0):
     vo = self.getVerticeNome(o)
